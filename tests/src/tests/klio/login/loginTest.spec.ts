@@ -53,7 +53,7 @@ test("TC0003 - Alternative Path - Should not Login Successfull - Empty email and
 test("TC00004 - Happy Path - Should Login Successfull", async ({ page }) => {
     const login = new LoginPage(page);
     await login.navigate();
-    await login.login("jonathan.brull.schroeder@gmail.com", "********");
+    await login.login("@gmail.com", "********");
     //const errorMessage = await login.getEmailValidationMessage();
 
     //expect(errorMessage).toBe(errorMessages.emailRequired)
